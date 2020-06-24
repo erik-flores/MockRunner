@@ -1,0 +1,35 @@
+PODS:
+  - AppSpectorSDK (1.3.1)
+  - InputBarAccessoryView (4.3.2):
+    - InputBarAccessoryView/Core (= 4.3.2)
+  - InputBarAccessoryView/Core (4.3.2)
+  - MessageKit (3.1.0):
+    - InputBarAccessoryView (~> 4.3.0)
+  - SendBirdSDK (3.0.183)
+  - SendBirdSyncManager (1.1.23):
+    - SendBirdSDK (~> 3.0.178)
+
+DEPENDENCIES:
+  - AppSpectorSDK
+  - MessageKit
+  - SendBirdSDK
+  - SendBirdSyncManager
+
+SPEC REPOS:
+  trunk:
+    - AppSpectorSDK
+    - InputBarAccessoryView
+    - MessageKit
+    - SendBirdSDK
+    - SendBirdSyncManager
+
+SPEC CHECKSUMS:
+  AppSpectorSDK: 71346985f05838012169696f06fcb715515b6e58
+  InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
+  MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
+  SendBirdSDK: 7a32ec6babe957e03264349f37cc389d946317c8
+  SendBirdSyncManager: e33bf87846b2c0899cf5080ce76042fbf5d2f11f
+
+PODFILE CHECKSUM: 6fb8a2d44405190a6250a2e70fb19c9b8cd955d8
+
+COCOAPODS: 1.9.2

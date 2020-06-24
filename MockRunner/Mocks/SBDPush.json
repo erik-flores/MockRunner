@@ -1,0 +1,40 @@
+{
+    "sendbird": {
+        "app_id": "1E181C4C-686F-44EA-8B59-9CE0FF6ECDF0",
+        "audience_type": "only",
+        "category": "messaging:offline_notification",
+        "channel": {
+            "channel_url": "demo_channel_chaton",
+            "custom_type": "",
+            "name": "Group Channel"
+        },
+        "channel_type": "messaging",
+        "created_at": "1591359059442",
+        "custom_type": "",
+        "files": {},
+        "mentioned_users": {},
+        "message": "Sdfsdf",
+        "message_id": 322757902,
+        "push_sound": "default",
+        "recipient": {
+            "id": "RoadrunnerUserDemo",
+            "name": "Road Runner",
+            "push_template": "default"
+        },
+        "sender": {
+            "id": "ChatonUserDemo",
+            "name": "",
+            "profile_url": "https://static.sendbird.com/sample/profiles/profile_08_512px.png"
+        },
+        "translations": {},
+        "type": "MESG",
+        "unread_message_count": 20
+    },
+    "aps" : {
+        "alert": ": Sdfsdf",
+        "badge" : 20,
+        "category" : "sendbird_mesg",
+        "mutable-content" : 1,
+        "sound" : "default"
+    }
+}
