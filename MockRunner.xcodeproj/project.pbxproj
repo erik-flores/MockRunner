@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1877175DDE0D2574C8142997 /* Pods_MockRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B774E4BAC5C94E7A805E231 /* Pods_MockRunner.framework */; };
+		9352AC7124BFD24F00B2E2E6 /* SendBirdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352AC7024BFD24F00B2E2E6 /* SendBirdManager.swift */; };
 		935397D3249998F80049FFAC /* ChatViewController+SBSMMessageCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935397D2249998F80049FFAC /* ChatViewController+SBSMMessageCollectionDelegate.swift */; };
 		935397D524999BCF0049FFAC /* ChatConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935397D424999BCF0049FFAC /* ChatConfig.swift */; };
 		93D708A52495110F0050114B /* ChatViewController+SBDUserEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D708A42495110F0050114B /* ChatViewController+SBDUserEventDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		794C1B37AFB9AC4FE0E04673 /* Pods-MockRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockRunner.release.xcconfig"; path = "Target Support Files/Pods-MockRunner/Pods-MockRunner.release.xcconfig"; sourceTree = "<group>"; };
 		8B774E4BAC5C94E7A805E231 /* Pods_MockRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9352AC7024BFD24F00B2E2E6 /* SendBirdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendBirdManager.swift; sourceTree = "<group>"; };
 		935397D2249998F80049FFAC /* ChatViewController+SBSMMessageCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+SBSMMessageCollectionDelegate.swift"; sourceTree = "<group>"; };
 		935397D424999BCF0049FFAC /* ChatConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConfig.swift; sourceTree = "<group>"; };
 		93D708A42495110F0050114B /* ChatViewController+SBDUserEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+SBDUserEventDelegate.swift"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				93D708A6249511270050114B /* ChatViewController+SBDConnectionDelegate.swift */,
 				935397D2249998F80049FFAC /* ChatViewController+SBSMMessageCollectionDelegate.swift */,
 				935397D424999BCF0049FFAC /* ChatConfig.swift */,
+				9352AC7024BFD24F00B2E2E6 /* SendBirdManager.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				93E56DE1248D118400EA48E3 /* ChatViewController+MessagesLayoutDelegate.swift in Sources */,
 				93E56DE3248D118400EA48E3 /* ChatViewController+SBDChannelDelegate.swift in Sources */,
 				935397D524999BCF0049FFAC /* ChatConfig.swift in Sources */,
+				9352AC7124BFD24F00B2E2E6 /* SendBirdManager.swift in Sources */,
 				93E56DEA248D119400EA48E3 /* ChatMessage.swift in Sources */,
 				93E56DE2248D118400EA48E3 /* ChatViewController+MessagesDataSource.swift in Sources */,
 				93D708A52495110F0050114B /* ChatViewController+SBDUserEventDelegate.swift in Sources */,

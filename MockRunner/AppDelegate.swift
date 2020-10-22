@@ -39,24 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        SBDMain.registerDevicePushToken(deviceToken, unique: false, completionHandler: { (status, error) in
-            guard error == nil else {
-                print("💔 registerDevicePushToken failure: \(String(describing: error?.debugDescription))")
-                return
-            }
-            if status == SBDPushTokenRegistrationStatus.pending {
-                SBDMain.connect(withUserId: ChatConfig.user, completionHandler: { (user, error) in
-                    guard error == nil else {
-                        print("💔 Error to connect : \(error.debugDescription)")
-                        return
-                    }
-                    SBDMain.registerDevicePushToken(SBDMain.getPendingPushToken()!, unique: true, completionHandler: { (status, error) in
-                        print("🙃 registraiton error \(error.debugDescription)")
-                        print("🙃 registraiton status \(status)")
-                    })
-               })
-           }
-        })
+        SendBirdManager.shared.registerDeviceToken(with: deviceToken)
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {

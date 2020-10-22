@@ -9,16 +9,16 @@
 import UIKit
 
 struct Alert {
-    private static let alertController = UIAlertController(title: "RoudRunner", message: nil, preferredStyle: .alert)
+    private let alertController = UIAlertController(title: "RoudRunner", message: nil, preferredStyle: .alert)
 
-    static func message(with message: String, in viewController: UIViewController, handler: ((UIAlertAction) -> Void)? = nil) {
+    func message(with message: String, in viewController: UIViewController, handler: ((UIAlertAction) -> Void)? = nil) {
         alertController.message = message
         let confirmAction = UIAlertAction(title: "OK", style: .default, handler: handler)
         alertController.addAction(confirmAction)
         viewController.present(alertController, animated: true, completion: nil)
     }
 
-    static func error(with error: NSError, in viewController: UIViewController, handler: @escaping (UIAlertAction) -> Void) {
+    func error(with error: NSError, in viewController: UIViewController, handler: @escaping (UIAlertAction) -> Void) {
         let code = error.code
         let underlyingError = error.userInfo["NSUnderlyingError"] as! NSError
         let messageError = underlyingError.localizedDescription

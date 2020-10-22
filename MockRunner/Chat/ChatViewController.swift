@@ -30,8 +30,8 @@ class ChatViewController: MessagesViewController {
         SBDMain.add(self as SBDConnectionDelegate, identifier: "SBDConnectionDelegate_\(self.description)")
         connectToChat(with: ChatConfig.user) {
             self.finishLoad()
+            SendBirdManager.shared.reRegisterDeviceToken()
         }
-        
     }
 
     func delegations() {
@@ -56,14 +56,14 @@ extension ChatViewController {
     func connectToChat(with userId: String, completionHandler: (() -> Void)? = nil) {
         SBDMain.connect(withUserId: userId, completionHandler: { (user, error) in
             guard error == nil else {
-                Alert.error(with: error!, in: self) { _ in
+                Alert().error(with: error!, in: self) { _ in
                     self.connectToChat(with: userId)
                 }
                 return
             }
             SBDGroupChannel.getWithUrl(ChatConfig.url) { (groupChannel, error) in
                 guard error == nil else {
-                    Alert.error(with: error!, in: self) { _ in
+                    Alert().error(with: error!, in: self) { _ in
                         self.connectToChat(with: userId)
                     }
                     return
@@ -153,7 +153,7 @@ extension ChatViewController {
     }
 
     private func markAllRead() {
-        SBDMain.connect(withUserId: "RoadrunnerUserDemo") { (user, error) in
+        SBDMain.connect(withUserId: ChatConfig.user) { (user, error) in
             guard error == nil else {
                 print("connect user for mark read - error \(error.debugDescription)")
                 return
